@@ -138,7 +138,7 @@ params:
     title: "Mahad."
     subtitle: "User Research Leader and Product Thinker"
     content: "I lead user research at Included Health, connecting member insights to business outcomes. Previously Managing Partner at Gobee Group, working globally on healthcare innovation and social impact."
-    image: /static/hero.jpg
+    image: /images/hero.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -162,7 +162,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/static/me.jpg"
+    image: "/images/me.jpg"
     content: |-
       I lead user research at Included Health, where I shape product strategy by connecting member insights to business outcomes.
 
