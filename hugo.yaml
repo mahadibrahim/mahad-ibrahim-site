@@ -1,4 +1,5 @@
 baseURL: "https://mahadibrahim.github.io/mahad-ibrahim-site/"
+canonifyURLs: true
 languageCode: "en-us"
 title: "Hugo Profile"
 theme: hugo-profile
