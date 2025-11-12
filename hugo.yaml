@@ -1,7 +1,7 @@
 baseURL: "https://mahadibrahim.github.io/mahad-ibrahim-site/"
 canonifyURLs: true
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "MIB"
 theme: hugo-profile
 
 outputs:
@@ -187,31 +187,34 @@ params:
   # Experience
   experience:
     enable: true
-    # title: "Custom Name"
+    title: "Experience"
     items:
-      - company: "Facebook"
-        companyUrl: "https://example.com"
+      - company: "Included Health"
+        companyUrl: "https://www.includedhealth.com"
         jobs:
-          - name: "Senior Software Developer"
-            date: "Jan 2023 - present"
-            content: "I am currently working as a senior software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-            info:
-              content: Working as a senior software developer
-            featuredItems:
-              fontAwesomeIcons:
-                - icon: fa-brands fa-react
-                  url: https://react.dev/
-                  tooltip: Example tooltip content
-                - icon: fab fa-x-twitter
-                  url: https://example.com
-                  # tooltip: Example tooltip content
-              customIcons:
-                - icon: /fav.png
-                  url: "https://example.com"
-                  tooltip: Example tooltip content
-          - name: "Software Developer"
-            date: "Jan 2022 - Dec 2023"
-            content: "I worked as a software developer. I worked on a project that will be used to help people find the best way to get around the city."
+          - name: "Senior Staff UX Researcher"
+            date: "August 2025 - present"
+            content: |
+              Promoted to Senior Staff role. Lead user research across organization. Member of product leadership group.
+
+              - Led discovery for company's first new product in three years (Cancer Support Program), achieving perfect 5/5 member satisfaction
+              - Transformed research operations: 4x volume increase, 54% cost reduction, top 10 globally by study volume
+              - Defined multi-year strategies for flagship products addressing $40M+ opportunities
+              - Built research infrastructure enabling evidence-based decision making at scale across organization
+            badges:
+              - "Maze"
+              - "Marvin"
+              - "RallyUXR"
+              - "Sprig"
+          - name: "Staff UX Researcher"
+            date: "October 2022 - August 2025"
+            content: |
+
+              Focused on internal Care and Clinical teams. Member of product leadership group.
+
+               - Led foundational research that created new internal tool stack (Care App)
+               - Spearheaded 0-1 revamp of multiple service lines including Claims and Concierge Referral services
+               - Launched product satisfaction tracking surveys across Care and Clinical teams
 
       - company: "Amazon"
         companyUrl: "https://example.com"
