@@ -60,8 +60,8 @@ Menus:
     #   weight: 2
 
 params:
-  title: "Hugo Profile"
-  description: Text about my cool site
+  title: "MIB"
+  description: Learn about Mahad
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -201,11 +201,7 @@ params:
               - Transformed research operations: 4x volume increase, 54% cost reduction, top 10 globally by study volume
               - Defined multi-year strategies for flagship products addressing $40M+ opportunities
               - Built research infrastructure enabling evidence-based decision making at scale across organization
-            badges:
-              - "Maze"
-              - "Marvin"
-              - "RallyUXR"
-              - "Sprig"
+              **Research Stack:** Maze • Marvin • RallyUXR • Sprig
           - name: "Staff UX Researcher"
             date: "October 2022 - August 2025"
             content: |
@@ -216,100 +212,61 @@ params:
                - Spearheaded 0-1 revamp of multiple service lines including Claims and Concierge Referral services
                - Launched product satisfaction tracking surveys across Care and Clinical teams
 
-      - company: "Amazon"
-        companyUrl: "https://example.com"
+      - company: "Gobee Group"
+        companyUrl: "https://gobeegroup.com"
         jobs:
-          - name: "Software Developer"
-            date: "Sep 2020 - Dec 2021"
-            info:
-              content: I worked as a software developer for more than one year in Amazon.
+          - name: "Managing Partner"
+            date: "2009 - 2022"
             content: |
-              I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+              Managed boutique global design consultancy focused on human-centered innovation in healthcare and social impact.
 
-              - Lead backend developer for a product.
-              - Created a frontend design for a product.
+              - Set corporate strategy and vision for 13 years
+              - Led 60+ projects across 25+ countries
+              - Worked with Microsoft, UNICEF, World Bank, Clinton Health Access Initiative
+              - Developed medical devices, health data products, and technology solutions
+              - Managed multidisciplinary teams across global engagements
 
-      - company: "Apple"
-        companyUrl: "https://example.com"
+      - company: "Cell-ED"
+        companyUrl: "https://cell-ed.com"
         jobs: 
-        - name: "Junior Software Developer"
-          date: "Jan 2020 - Aug 2020"
-          featuredItems:
-            fontAwesomeIcons:
-              - icon: fa-brands fa-react
-                url: https://react.dev/
-              - icon: fab fa-x-twitter
-                url: https://example.com
-            customIcons:
-              - icon: /fav.png
-                url: "https://example.com"
+        - name: "Chief Technology Officer"
+          date: "2013-2015"
           content: |
-            I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+            Built foundational business and technology strategy for mobile-first adult education platform serving low-literacy, low-resourced learners.
 
-            - Lead backend developer for a product.
-            - Created a frontend design for a product.
+             - Architected location-agnostic micro-learning model delivering 3-minute lessons via any mobile device, even without internet
+             - Developed scalable platform strategy enabling education delivery through basic phones, smartphones, tablets, and computers
+             - Created technology framework that proved to accelerate learning by 84% (later validated through randomized controlled trials)
+             - Established product vision and technical foundation still in use today, serving tens of thousands of adult learners nationwide
+             - Platform has since won Library of Congress Literacy Award (2016) and Harvard Kennedy School Top 25 Innovations Award (2017)
 
-      - company: "Netflix"
-        companyUrl: "https://example.com"
-        jobs:
-        - name: "UI/UX Designer"
-          date: "June 2017 - Nov 2019"
-          content: |
-            I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-            - Lead backend developer for a product.
-            - Created a frontend design for a product.
-
-      - company: "Google"
-        companyUrl: "https://example.com"
-        jobs:
-        - name: "Product Designer"
-          date: "Feb 2016 - Mar 2017"
-          content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
-  # Education
+ # Education Section
   education:
     enable: true
-    # title: "Custom Name"
-    index: false
+    title: "Education"
     items:
-      - title: "Master of Business Administration"
+      - title: "Ph.D."
         school:
           name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          url: "https://www.berkeley.edu/"
+        date: "2002 - 2009"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+          Dissertation: "Peeling the Onion: The Case of the Information Technology Club Project in Egypt"
+          
+          Fulbright Scholar, Egypt. Conducted fieldwork examining technology adoption and social change.
 
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
+      - title: "Master of Information Management and Systems (MIMS)"
         school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+          name: "University of California, Berkeley"
+          url: "https://www.berkeley.edu/"
+        date: "2000 - 2002"
+        content: "Masters project: Street Stories - a location-based mobile application to gather and present place-based oral histories"
 
+      - title: "B.S. Applied Economics and Business Management"
+        school:
+          name: "Cornell University"
+          url: "https://www.cornell.edu/"
+        date: "1993 - 1998"
   # Achievements
   achievements:
     enable: true
