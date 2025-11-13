@@ -162,7 +162,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.jpg"
+    image: "/images/me.JPG"
     content: |-
       I lead user research at Included Health, where I shape product strategy by connecting member insights to business outcomes.
 
