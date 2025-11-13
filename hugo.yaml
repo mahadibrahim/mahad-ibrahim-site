@@ -32,14 +32,14 @@ markup:
 Menus:
   main:
     - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
+      name: Writing
+      title: My Substack
+      url: https://substack.com/@mahadbullo
       weight: 1
     - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
+      name: Videos
+      title: Gobee Group Projects
+      url: https://vimeo.com/gobee
       weight: 2
     #Dropdown menu
     # - identifier: dropdown
