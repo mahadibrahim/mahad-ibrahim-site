@@ -145,7 +145,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "/Mahad_Ibrahim_CV.pdf"
+      url: "https://mahadbullo.com/Mahad_Ibrahim_CV.pdf"
       download: true
       newPage: false
     socialLinks:
