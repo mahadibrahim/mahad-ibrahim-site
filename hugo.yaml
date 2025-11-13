@@ -292,60 +292,49 @@ params:
   # projects
   projects:
     enable: true
-    # title: "Custom Name"
+    title: "Featured Projects"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: Cancer Support Program
+        content: Led end-to-end discovery for Included Health's first new product in three years—a comprehensive Cancer Support Program for members facing cancer diagnoses. Achieved perfect 5/5 member satisfaction across all metrics through extensive member research including 20+ interviews and unmoderated testing sessions. Introduced new platform capabilities including in-app caregiver support and direct provider messaging that now serve as foundation for future product development. Gained CEO-level recognition for innovation and member-centric approach.
+        image: /images/projects/cancer-center.jpeg
         featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+          name: Press Release
+          link: https://includedhealth.com/announcements/included-health-introduces-the-specialty-care-clinic/
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+          - "Product Discovery"
+          - "0-1 Innovation"
+          - "Member Research"
+      - title: Care & Case Management for the AI Era
+        content: Spearheaded comprehensive discovery and strategic vision for major overhaul of Care and Case Management product—a flagship offering addressing $40M+ market opportunity serving high-complexity members who account for 40% of healthcare costs. Delivered transformative 2-year product strategy through rigorous research including 10 member interviews, 20 stakeholder interviews, 60 survey respondents, and 20 unmoderated testing participants. Created vision for AI-driven care delivery with projected 40-50% efficiency gains for clinical teams and ROI improvements from 1.6:1 to 3:1. Strategy received strong executive endorsement with CEO pushing team to "think even further out."
+        image: /images/projects/ccm.jpeg
         featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+          name: Announcement
+          link: https://includedhealth.com/announcements/included-health-earns-urac-accreditation-for-case-management/
         badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
-
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+          - "Strategic Vision"
+          - "AI Innovation"
+          - "Product Strategy"
+      - title: Research Operations Transformation
+        content: Led comprehensive overhaul of Included Health's entire User Research technology stack to dramatically scale research capabilities and reduce operational friction. Delivered 4x increase in member research volume (200+ moderated interviews, 400+ unmoderated tests) while reducing costs and timelines. Achieved 68 studies completed annually, placing Included Health in top 10 companies globally according to Maze. Reduced insight development time from 4 hours to 30-60 minutes (4x efficiency gain) and cut cost per moderated study from $1,300 to $600 (54% reduction). Transformed organizational research capability with new research repository, User Research CRM, and expanded toolset for only $20,000 net additional cost.
+        image: /images/projects/research-ops-framework.jpeg
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
-
+          - "Operations"
+          - "Research Infrastructure"
+          - "Scaled Impact"
+      - title: AI-Powered Product Health Measurement
+        content: Conceived and led implementation of comprehensive measurement strategy to monitor essential journeys across web and mobile applications. Built measurement framework combining usability metrics, effort scores, journey analytics with qualitative questions and AI-moderated discovery interviews. Coordinated implementation across Legal, Security, IT, Engineering, General Management, and Design teams. Partnered with Sprig to create new organizational capability for real-time product health monitoring. Launching January 2025 to measure flagship product release with company's largest client.
+        image: /images/projects/continuousresearch.png
+        badges:
+          - "Analytics Strategy"
+          - "AI Integration"
+          - "Cross-functional Leadership"
   #Contact
   contact:
     enable: true
     # title: "Custom Name"
     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
     btnName: Mail me
-    btnLink: mailto:gurusabarisha@gmail.com
+    btnLink: mailto:iammahadbullo@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -361,11 +350,7 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      linkedin: https://www.linkedin.com/in/mahadbullo/
 
   # List pages like blogs and posts
   listPages:
