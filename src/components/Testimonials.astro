@@ -1,0 +1,144 @@
+---
+const testimonials = [
+  {
+    quote: "If you were to have only one design researcher on your team you would want it to be Mahad. From exploratory to generative to evaluative Mahad can do it all. He has a diverse toolkit of qualitative and quantitative methods, and not only can he execute on every project exceptionally well, he is a trusted and respected advisor and mentor to his colleagues. Most importantly, perhaps, he has the experience and skill to wrangle multiple — and sometimes oppositional — stakeholders and facilitate the hard, complex conversations to achieve alignment, clarity, and forward momentum on wicked problems.",
+    name: "Marie Mika, PhD",
+    title: "Lead User Researcher",
+    company: "Frontrow Health"
+  },
+  {
+    quote: "Mahad has a unique ability to grasp problems quickly, be empathetic with users, come up with a product strategy and business model and execute. He thinks big but can roll up his sleeves and fight with you in the trenches. A really rare quality. Mahad has taught me how to be a better businessman and product manager.",
+    name: "David Haddad",
+    title: "Head of Product and Technology",
+    company: "Adherium"
+  },
+  {
+    quote: "Working with Mahad at Included Health was an invaluable experience. His dedication to driving impactful research for our care and clinical teams was unparalleled. Soon after joining the company, Mahad implemented a repeatable method for stakeholders to observe and understand the challenges of these teams, generating empathy and valuable solutions in the process.",
+    name: "Allison Leach, CPACC",
+    title: "Expert UX Researcher",
+    company: "Veradigm"
+  },
+  {
+    quote: "I had the pleasure of working under Mahad directly during my internship at Gobee, and have been grateful to call him my mentor for 7 years now. In addition to being a brilliant multidisciplinary thinker that leads by example, he is also an incredible manager. Working with Mahad was a career accelerant for me.",
+    name: "Omar Mohamed",
+    title: "Founder / PM",
+    company: "Startups"
+  }
+];
+---
+
+<section id="testimonials" class="testimonials">
+  <div class="testimonials__container container">
+    <header class="section-header reveal">
+      <span class="section-label">Recommendations</span>
+      <h2 class="section-title">What Colleagues Say</h2>
+    </header>
+
+    <div class="testimonials__grid">
+      {testimonials.map((testimonial, index) => (
+        <blockquote class="testimonial reveal" style={`--delay: ${index * 0.1}s`}>
+          <div class="testimonial__quote">
+            <svg class="testimonial__icon" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+              <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+            </svg>
+            <p class="testimonial__text">{testimonial.quote}</p>
+          </div>
+          <footer class="testimonial__footer">
+            <cite class="testimonial__author">
+              <span class="testimonial__name">{testimonial.name}</span>
+              <span class="testimonial__role">{testimonial.title}, {testimonial.company}</span>
+            </cite>
+          </footer>
+        </blockquote>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials {
+    background: var(--color-bg);
+  }
+
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl);
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-xl);
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    margin: 0;
+    animation-delay: var(--delay);
+    transition: box-shadow var(--transition-base);
+  }
+
+  .testimonial:hover {
+    box-shadow: var(--shadow-md);
+  }
+
+  .testimonial__quote {
+    flex: 1;
+  }
+
+  .testimonial__icon {
+    color: var(--color-accent);
+    opacity: 0.3;
+    margin-bottom: var(--space-md);
+  }
+
+  .testimonial__text {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    margin: 0;
+    font-style: italic;
+  }
+
+  .testimonial__footer {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .testimonial__author {
+    font-style: normal;
+  }
+
+  .testimonial__name {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+  }
+
+  .testimonial__role {
+    display: block;
+    font-size: 0.8125rem;
+    color: var(--color-text-tertiary);
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .testimonials__grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .testimonial {
+      padding: var(--space-lg);
+    }
+
+    .testimonial__text {
+      font-size: 0.875rem;
+    }
+  }
+</style>
