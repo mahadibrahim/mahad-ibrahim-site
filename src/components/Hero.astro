@@ -1,0 +1,221 @@
+---
+import { hero, siteConfig } from '../data/site';
+---
+
+<section class="hero">
+  <div class="hero__container container">
+    <div class="hero__content">
+      <span class="hero__intro animate-fade-up">{hero.intro}</span>
+      <h1 class="hero__title animate-fade-up delay-1">{hero.title}</h1>
+      <p class="hero__subtitle animate-fade-up delay-2">{hero.subtitle}</p>
+      <p class="hero__description animate-fade-up delay-3">{hero.content}</p>
+
+      <div class="hero__actions animate-fade-up delay-4">
+        <a href={hero.resumeUrl} class="btn btn--primary" download>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+          </svg>
+          Resume
+        </a>
+        <a href={siteConfig.social.linkedin} class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__image-wrapper animate-fade delay-3">
+      <div class="hero__image-frame">
+        <img src={hero.image} alt="Mahad Ibrahim" class="hero__image" loading="eager" />
+      </div>
+      <div class="hero__image-decoration"></div>
+    </div>
+  </div>
+
+  <div class="hero__scroll-indicator">
+    <span class="hero__scroll-text">Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 72px; /* Header height */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4xl);
+    align-items: center;
+    padding: var(--space-4xl) var(--space-xl);
+  }
+
+  .hero__content {
+    max-width: 560px;
+  }
+
+  .hero__intro {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-md);
+  }
+
+  .hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 10vw, 7rem);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    color: var(--color-text);
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero__subtitle {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-style: italic;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-xl);
+    line-height: 1.4;
+  }
+
+  .hero__description {
+    font-size: 1.0625rem;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--space-2xl);
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+  }
+
+  .hero__image-wrapper {
+    position: relative;
+    justify-self: end;
+  }
+
+  .hero__image-frame {
+    position: relative;
+    width: 380px;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: var(--color-border-subtle);
+  }
+
+  .hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: grayscale(10%);
+    transition: filter var(--transition-base);
+  }
+
+  .hero__image-frame:hover .hero__image {
+    filter: grayscale(0%);
+  }
+
+  .hero__image-decoration {
+    position: absolute;
+    top: 24px;
+    right: -24px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+    z-index: -1;
+    opacity: 0.3;
+  }
+
+  .hero__scroll-indicator {
+    position: absolute;
+    bottom: var(--space-2xl);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    animation: fadeInUp 0.6s ease 0.8s forwards;
+    opacity: 0;
+  }
+
+  .hero__scroll-text {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-tertiary);
+  }
+
+  .hero__scroll-line {
+    width: 1px;
+    height: 48px;
+    background: linear-gradient(to bottom, var(--color-text-tertiary), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(1); }
+    50% { opacity: 1; transform: scaleY(1.1); }
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .hero__container {
+      grid-template-columns: 1fr;
+      gap: var(--space-3xl);
+      text-align: center;
+    }
+
+    .hero__content {
+      max-width: 100%;
+      order: 2;
+    }
+
+    .hero__image-wrapper {
+      order: 1;
+      justify-self: center;
+    }
+
+    .hero__image-frame {
+      width: 280px;
+      height: 350px;
+    }
+
+    .hero__actions {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero__image-frame {
+      width: 220px;
+      height: 280px;
+    }
+
+    .hero__image-decoration {
+      top: 16px;
+      right: -16px;
+    }
+
+    .hero__scroll-indicator {
+      display: none;
+    }
+  }
+</style>
