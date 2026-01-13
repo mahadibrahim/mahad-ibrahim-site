@@ -27,7 +27,7 @@ export const hero = {
   intro: "Hi, my name is",
   title: "Mahad.",
   subtitle: "User Research Leader and Product Thinker",
-  content: "I lead user research at Included Health, connecting member insights to business outcomes. Previously Managing Partner at Gobee Group, working globally on healthcare innovation and social impact.",
+  content: "I lead user research at Included Health, connecting member insights to business outcomes. I've built and led global teams across 25+ countries—from corporate strategy rooms to field research during the West African Ebola crisis. I'm equally comfortable setting organizational vision, managing teams, or doing hands-on research.",
   image: "/images/hero.jpg",
   resumeUrl: "/Mahad_Ibrahim_CV.pdf"
 };
@@ -35,7 +35,7 @@ export const hero = {
 export const about = {
   title: "About Me",
   image: "/images/me.JPG",
-  content: `I lead user research at Included Health, where I shape product strategy by connecting member insights to business outcomes.
+  content: `I operate across the full spectrum—setting organizational strategy, building and mentoring teams, and doing hands-on research at the Senior Staff level. My work has taken me from corporate boardrooms to rural health clinics across four continents, including emergency response in Liberia, Sierra Leone, and Guinea during the Ebola crisis.
 
 At Included Health, I've led discovery for our first new product in three years (achieving 5/5 member satisfaction), transformed research operations to deliver 4x volume at 54% lower cost, and defined multi-year strategies for flagship products addressing $40M+ opportunities. My work spans strategic product innovation, operational excellence, and cross-functional leadership across clinical, product, and design teams.
 
@@ -180,10 +180,14 @@ export const projects = {
       tags: ["Operations", "Research Infrastructure", "Scaled Impact"]
     },
     {
-      title: "AI-Powered Product Health Measurement",
-      description: "Conceived and led implementation of comprehensive measurement strategy to monitor essential journeys across web and mobile applications. Built measurement framework combining usability metrics, effort scores, journey analytics with qualitative questions and AI-moderated discovery interviews. Coordinated implementation across Legal, Security, IT, Engineering, General Management, and Design teams. Partnered with Sprig to create new organizational capability for real-time product health monitoring. Launching January 2025 to measure flagship product release with company's largest client.",
+      title: "Real-Time Ebola Data System",
+      description: "Conducted on-the-ground research in Guinea, Liberia, and Sierra Leone during the Ebola crisis to develop rapid approaches to better manage critical epidemic data flows. Led a team of 20 researchers, data scientists, and technologists under emergency conditions. Created a 300-page design guide and framework that allowed paper forms to support real-time data technology. Designed a hybrid paper-and-digital system that integrated with existing workflows while providing real-time data during the epidemic. Work was featured in VICE.",
       image: "/images/projects/continuousresearch.png",
-      tags: ["Analytics Strategy", "AI Integration", "Cross-functional Leadership"]
+      link: {
+        text: "VICE Feature",
+        url: "https://www.vice.com/en/article/kbzv8v/ebolas-paper-trail"
+      },
+      tags: ["Global Health", "Crisis Response", "Field Research"]
     }
   ]
 };
