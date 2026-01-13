@@ -67,6 +67,16 @@ import { experience } from '../data/site';
         </div>
       ))}
     </div>
+
+    <div class="experience__footer reveal">
+      <a href="/more#earlier-career" class="experience__view-more">
+        View earlier career
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <span class="experience__footer-note">Microsoft, World Bank, Intel, HP & more</span>
+    </div>
   </div>
 </section>
 
@@ -223,6 +233,39 @@ import { experience } from '../data/site';
 
   .experience__tools-list {
     color: var(--color-text-secondary);
+  }
+
+  .experience__footer {
+    margin-top: var(--space-3xl);
+    padding-top: var(--space-2xl);
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+  }
+
+  .experience__view-more {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    text-decoration: none;
+    padding: var(--space-sm) var(--space-lg);
+    border: 1px solid var(--color-accent);
+    border-radius: 100px;
+    transition: all var(--transition-fast);
+    margin-bottom: var(--space-sm);
+  }
+
+  .experience__view-more:hover {
+    background: var(--color-accent);
+    color: var(--color-bg);
+  }
+
+  .experience__footer-note {
+    display: block;
+    font-size: 0.8125rem;
+    color: var(--color-text-tertiary);
   }
 
   /* Responsive */

@@ -17,6 +17,7 @@ export const navigation = [
   { name: "Experience", href: "#experience" },
   { name: "Education", href: "#education" },
   { name: "Projects", href: "#projects" },
+  { name: "More", href: "/more" },
   { name: "Contact", href: "#contact" },
   { name: "Writing", href: "https://substack.com/@mahadbullo", external: true },
   { name: "Videos", href: "https://vimeo.com/gobee", external: true }

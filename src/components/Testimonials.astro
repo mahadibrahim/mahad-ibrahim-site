@@ -23,6 +23,18 @@ const testimonials = [
     name: "Omar Mohamed",
     title: "Founder / PM",
     company: "Startups"
+  },
+  {
+    quote: "To be on a team with Mahad is to be on a winning team -- whether as a boss, colleague, or business partner. Mahad is unparalleled at organizing and inspiring teams, and he methodically and unflinchingly tackles problems of any scale. The depth and breadth of his experience and expertise makes him an indispensable player who can work on any project at any level.",
+    name: "Alexis Santos",
+    title: "CEO",
+    company: "The Bureau Adventure Games"
+  },
+  {
+    quote: "I have known Mahad for over 10 years and had the pleasure of working with him on multiple projects. Mahad's ability to breakdown and communicate complex ideas to bring it to life is unmatched. His demeanor was always composed and confident and he has a keen sense of emotional intelligence.",
+    name: "Bette Mengesha",
+    title: "Principal, HR Business Partner",
+    company: "American Water"
   }
 ];
 ---
@@ -62,8 +74,8 @@ const testimonials = [
 
   .testimonials__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-2xl);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
   }
 
   .testimonial {
@@ -125,10 +137,16 @@ const testimonials = [
   }
 
   /* Responsive */
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
+    .testimonials__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
     .testimonials__grid {
       grid-template-columns: 1fr;
-      gap: var(--space-xl);
+      gap: var(--space-lg);
     }
   }
 

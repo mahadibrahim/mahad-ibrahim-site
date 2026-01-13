@@ -55,6 +55,16 @@ import { projects } from '../data/site';
         </article>
       ))}
     </div>
+
+    <div class="projects__footer reveal">
+      <a href="/more#projects" class="projects__view-more">
+        View more projects
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <span class="projects__footer-note">Global health & social impact work from Gobee Group</span>
+    </div>
   </div>
 </section>
 
@@ -197,6 +207,39 @@ import { projects } from '../data/site';
 
   .project__link:hover {
     color: var(--color-accent-hover);
+  }
+
+  .projects__footer {
+    margin-top: var(--space-3xl);
+    padding-top: var(--space-2xl);
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+  }
+
+  .projects__view-more {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    text-decoration: none;
+    padding: var(--space-sm) var(--space-lg);
+    border: 1px solid var(--color-accent);
+    border-radius: 100px;
+    transition: all var(--transition-fast);
+    margin-bottom: var(--space-sm);
+  }
+
+  .projects__view-more:hover {
+    background: var(--color-accent);
+    color: var(--color-bg);
+  }
+
+  .projects__footer-note {
+    display: block;
+    font-size: 0.8125rem;
+    color: var(--color-text-tertiary);
   }
 
   /* Responsive */
