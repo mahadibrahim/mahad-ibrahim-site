@@ -182,7 +182,7 @@ export const projects = {
     {
       title: "Real-Time Ebola Data System",
       description: "Conducted on-the-ground research in Guinea, Liberia, and Sierra Leone during the Ebola crisis to develop rapid approaches to better manage critical epidemic data flows. Led a team of 20 researchers, data scientists, and technologists under emergency conditions. Created a 300-page design guide and framework that allowed paper forms to support real-time data technology. Designed a hybrid paper-and-digital system that integrated with existing workflows while providing real-time data during the epidemic. Work was featured in VICE.",
-      image: "/images/projects/continuousresearch.png",
+      image: "/images/projects/ebola-data.jpg",
       link: {
         text: "VICE Feature",
         url: "https://www.vice.com/en/article/kbzv8v/ebolas-paper-trail"
